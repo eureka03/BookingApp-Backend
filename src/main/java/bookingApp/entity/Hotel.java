@@ -29,6 +29,7 @@ public class Hotel {
     private Double rating;
 
     @Column(name="number_of_rooms")
+    @OneToMany(mappedBy="hotel")
     private Integer numberOfRooms;
 
 
