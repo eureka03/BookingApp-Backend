@@ -1,13 +1,16 @@
 package bookingApp.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
+@Table(name="hotels")
 public class Hotel {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="hotel_id")
     private Integer Id;
 
     @Column(name="hotel_name")

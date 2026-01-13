@@ -2,9 +2,10 @@ package bookingApp.dto;
 
 import lombok.Data;
 
+@Data
 public class HotelDto {
 
-    private Integer ID;
+    private Integer id;
     private String hotelName;
     private String address;
     private String city;
