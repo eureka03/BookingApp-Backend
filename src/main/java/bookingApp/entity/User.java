@@ -18,4 +18,7 @@ public class User {
     @Column(name="email")
     private String userEmail;
 
+    @Column(name="phone")
+    private String userPhone;
+
 }
